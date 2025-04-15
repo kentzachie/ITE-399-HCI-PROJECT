@@ -1,2 +1,7 @@
-# ITE-399-HCI-PROJECT
-This project is a School Webpage based on the PHINMA Cagayan de Oro College website.
+PHINMA Cagayan de Oro College School Webpage
+
+Nowadays technology became a big thing and it is now very popular among people. Because of this most people would just browse online to look for things especially when it comes to education, and that is why a School or University Website is very essential nowadays because instead of going to a school campus and asking the staff and faculty about things that people need to know about the school or university, they can just visit the school website instead for efficiency. Back then, people would roam around the campus to see what the school looks like and would ask the faculty things about the school face to face which could be time consuming. And that is why a school website is made because it is very efficient nowadays especially that we are in the modern days people mostly rely on technology.
+
+The developers created a website based off the website of “PHINMA Cagayan de Oro College” and the website consists of a navigation bar with the home page, about the school, courses, contact, and about the developers. There are also other pages you can click to visit which contains more details about the school which are the quality of education, admission, affordability, student life and career path, and also the parent’s portal. The developers did their best to make the website a user friendly website and once again the website is based off the PHINMA Cagayan de Oro College’s website.
+
+The developers used HTML and CSS to develop this school website and also thanks to PHINMA Cagayan de Oro College because this project became possible. This website aims to provide easier access to people who are willing to discover more about the school and its courses. The website is made for efficiency especially in technology, so people can view and learn more about the school through online.
