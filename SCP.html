@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/COC.jpg">
+    <title>PHINMA COC</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .QE {
+            background-color: white;
+            max-width: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            padding: 50px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-size: 18px;
+            color: rgb(1, 92, 46);
+            text-align: justify;
+        }
+
+        .QE img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .action-btn {
+            background-color: #015C2E;
+            color: white;
+            border: none;
+            padding: 10px 25px;
+            margin: 10px 0;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .action-btn:hover {
+            background-color: #023d20;
+        }
+
+        h3, h4 {
+            color: #015C2E;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="Header_top">
+            <img src="images/CO.png" class="logoP" alt="PHINMA COC Logo">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn">Search</button>
+        </div>
+    </header>
+
+    <div class="div_nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Courses</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Developers</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="about">
+        <div class="about_container">
+            <div class="QE">
+                <img src="images/cas.jpg" alt="Student Career Path Banner">
+
+                <div class="description">
+                    <h3 align="center">STUDENT CAREER PATH</h3>
+                    <p>
+                        PHINMA Cagayan de Oro College was established back in 1948 as Parent-Teacher College
+                        – a nonpolitical and nonsectarian educational institution. The school served the youth and working
+                        individuals by providing education from the primary to the tertiary levels. In the next 30 years,
+                        PHINMA COC expanded its course offerings to include Computer Science, Engineering, and Mass
+                        Communications.<br><br>
+
+                        PHINMA COC was acquired in 2005 by PHINMA, making it one of the conglomerate’s first investments in
+                        the educational sector. Through PHINMA’s leadership and management, the college improved its
+                        existing academic programs by employing non-traditional approaches to learning.
+                    </p>
+
+                    <hr style="margin: 40px 0; border-top: 2px solid #015C2E;">
+
+                    <h3>Self-Assessment</h3>
+                    <p>
+                        Amidst the complexities of choosing a career path, self-assessment serves as a vital tool for students,
+                        enabling them to identify their passions, interests, and skills. Through self-reflection and evaluation,
+                        students can align their educational choices and career aspirations, fostering a clearer trajectory toward
+                        their desired professional endeavors.
+                    </p>
+
+                    <h4>What Kind of Student Are You?</h4>
+                    <p>
+                        Understanding what kind of student you are is an essential step in optimizing your academic performance
+                        and learning experience. By evaluating your study habits, learning preferences, and areas of academic
+                        strength or challenge, you can create a tailored approach to studying that enhances your educational journey.
+                    </p>
+                    <button onclick="alert('Redirecting to quiz...')" class="action-btn">Take the Quiz</button>
+
+                    <h4>Identifying Your Learning Style</h4>
+                    <p>
+                        Discover how you best absorb and retain information—whether visually, verbally, kinesthetically, or through
+                        writing. Knowing your style helps tailor your learning process, improving focus and success in school.
+                    </p>
+                    <button onclick="alert('Learn more about learning styles.')" class="action-btn">Learn More</button>
+
+                    <h4>Improving Study Habits</h4>
+                    <p>Here are the top 10 ways to improve your study habits:</p>
+                    <ol>
+                        <li>Set clear, specific goals for every study session.</li>
+                        <li>Prioritize tasks based on urgency and difficulty.</li>
+                        <li>Engage in active learning—summarize or teach concepts to others.</li>
+                        <li>Use techniques like flashcards, mind mapping, or quizzes.</li>
+                        <li>Break study sessions into chunks with short breaks.</li>
+                        <li>Minimize distractions by silencing devices and staying focused.</li>
+                        <li>Ask for help when you're stuck—teachers or peers can guide you.</li>
+                        <li>Exercise regularly to boost brain function and focus.</li>
+                        <li>Avoid multitasking—do one thing at a time.</li>
+                        <li>Reward yourself after productive sessions to stay motivated.</li>
+                    </ol>
+                    <button onclick="alert('Connect with a career coach.')" class="action-btn">Talk to a Career Coach</button>
+
+                    <h4>Career Finder</h4>
+                    <p>
+                        The <strong>PHINMAEd Future Career Finder</strong> helps students discover their ideal path through a guided
+                        journey of self-reflection. By identifying your interests and strengths, this tool matches you with careers
+                        that align with your values and capabilities.
+                    </p>
+                    <p>Say goodbye to uncertainty and hello to a future designed just for you!</p>
+                    <button onclick="alert('Launching PHINMAEd Career Finder...')" class="action-btn">Start Your Exploration</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/COC.jpg">
+    <title>PHINMA COC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <style>
+        .QE {
+            background-color: white;
+            max-width: auto;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            height: auto;
+            padding: 50px 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-size: 25px;
+            color: rgb(1, 92, 46);
+            text-align: justify;
+        }
+
+        .description h3 {
+            text-align: center;
+        }
+
+        .academics-list {
+            margin-top: 30px;
+            font-size: 18px;
+        }
+
+        .academics-list ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .academics-list li {
+            margin-bottom: 10px;
+        }
+
+        .QE img {
+            width: 100%; /* Make the image full width */
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+
+ .qe_us {
+    background-color: white;
+    max-width: 1000px;
+    margin: 10px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 90vh; /* POSITION SA ABOUT US*/
+    padding: 40px 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: rgb(1, 92, 46);
+    text-align: justify;
+}
+
+.qe.bg {
+    position: relative;
+    top: 5px; /* adjust sa container */
+    background: linear-gradient(to bottom,rgba(1, 92, 46), #ffffff); /* Green to White gradient */
+    padding: 1px 0;
+}
+
+.qe.container {
+    width: 100%; /* Use full width of the screen */
+    margin: 40 auto;
+    padding: 0 10px; /* Add some padding on the sides for better spacing */
+    position: relative;
+    top: 10px;
+}   
+
+/* Styling the hcta list */
+.qe_array {
+    list-style-type: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 6 items per row */
+    gap: 30px; /* Space between items */
+    width: 100%;
+}
+
+/* Styling for each list item */
+.qe_item {
+    background-color: #fff; /* Default to white */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    color: #333; /* Default font color */
+}
+
+/* Alternating background color for odd/even items */
+.qe_array .about_item:nth-child(odd) {
+    background-color: rgb(1, 92, 46); /* Green for odd items */
+    color: white; /* White font for green background */
+}
+
+.qe_array .qe_item:nth-child(odd) .qe_icon {
+    background-color: white; /* White circle */
+}
+
+.qe_array .qe_item:nth-child(even) {
+    background-color: #fff; /* White for even items */
+    color: #333; /* Black font for white background */
+}
+
+.qe_array .qe_item:nth-child(even) .qe_icon {
+    background-color: rgb(247, 253, 250); /* Green circle */
+}
+
+.qe_item:hover {
+    transform: scale(1.05); /* Slightly scales the item */
+    border: 2px solidrgb(39, 41, 40); /* Changes border color to green */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+
+/* Target the image inside the icon */
+.qe_icon img {
+    width: 500px;  /* Adjust image size inside the circle */
+    height: 400px;
+}
+
+.seniorHigh, .Undergraduate, .Graduate {
+    font-size: 15px;
+}
+
+
+    </style>
+
+    <!-- Header -->
+    <header>
+        <div class="Header_top">
+            <img src="images/CO.png" class="logoP">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn">Search</button>
+        </div>
+    </header>
+
+    <div class="div_nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Courses</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Developers</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="about">
+        <div class="about_container">
+            <div class="QE">
+                <!-- Image added here -->
+                <img src="images/coc-admission-banner.jpg" alt="Image 1">
+
+                <div class="description">
+                    <h3>ACADEMICS</h3>
+                    <p class="pchoose">PHINMA Cagayan de Oro College was established back in 1948 as Parent-Teacher College
+                        – a nonpolitical and nonsectarian educational institution. The school served the youth and working
+                        individuals by providing education from the primary to the tertiary levels. In the next 30 years,
+                        PHINMA COC expanded its course offerings to include Computer Science, Engineering, and Mass
+                        Communications.<br>
+
+                        PHINMA COC was acquired in 2005 by PHINMA, making it one of the conglomerate’s first investments in
+                        the educational sector. Through PHINMA’s leadership and management, the college improved its
+                        existing academic programs by employing non-traditional approaches to learning.</p>
+                </div>
+
+                <div class="qe bg">
+                    <div class="qe container">
+                        <ul class="qe_array text-center">
+                            <li class="qe_item">
+                                <div class="qe_icon">
+                                    <img src="images/seniorh.jpg">
+                                </div>
+
+                                <dt><b>Senior High School</b></dt>
+                                <br>
+
+                                    <dd class="seniorHigh">ABM, ABM focus on Hospitality and Tourism Management, STEM, HUMSS, GAS, GAS focus Criminology, GAS focus on Education, GAS focus in Information Teachnology,<br>TVL Home Economics focus on Toursim Management, TVL Home Economics focus on Hospitality Management, and TVL ICT focus on Computer Programming
+                                    </dd>
+                            </li>
+                            <li class="qe_item">
+                                <div class="qe_icon">
+                                    <img src="images/up.jpeg">
+                                </div>
+                                <dt><b>Undergraduate Programs</b></dt>
+                                <br>
+                                <dd class="Undergraduate">College of Management and Accountancy, College of Engineering and Architecture, College of Education, School of Criminology and Criminal Justice, College of Information Technology, College of Allied Health and Sciences
+                                </dd>
+                            </li>
+                            <li class="qe_item">
+                                <div class="qe_icon">
+                                    <img src="images/gradp.jpeg">
+                                </div>
+                                <dt><b>Graduate Programs</b></dt>
+                                <br>
+                                <dd class="Graduate">Master of Arts major in Educational Administration, Master of Arts major in Elementary Education, Master of Arts major in Secondary Education, Master of Arts major in Teaching Social Studies, Master of Science in Criminology, Master in Government Management, Doctor of Philosophy in Educational Administration and Supervision
+                                </dd>
+                            </li>
+                        </ul>
+                    </div>
+                </div>         
+
+</body>
+
+</html>

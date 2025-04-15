@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/COC.jpg">
+    <title>PHINMA COC</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+
+<style>
+    
+  .QE {
+    background-color: white;
+    max-width: auto;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    height: 66vh;
+    padding: 50px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-size: 25px;
+    color: rgb(1, 92, 46);
+    text-align: justify;
+}
+
+.section_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    background-color: #f4f4f4; 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.slides {
+    width: 1000px; 
+    height: 600px; 
+    object-fit: cover; 
+    border: 3px solid #ccc; 
+    border-radius: 8px; 
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides:hover {
+    transform: scale(1.1); 
+}
+
+
+
+    </style>
+
+    <!-- Header -->
+    <header>
+        <div class="Header_top">
+            <img src="images/CO.png" class="logoP">
+        </div>
+
+        <!-- Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn">Search</button>
+        </div>
+    </header>
+
+    <div class="div_nav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li><a href="index.html">Courses</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="index.html">Developers</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div id="about">
+        <div class="about_container">  
+          <div class="QE">
+              <img src="images/sl.jpg.png" alt="Image 1">
+  
+              <div class="description">
+                  <h3 align="center">STUDENT LIFE</h3>
+                  <p class="pchoose">Student life at COC PHINMA is a dynamic and enriching experience that fosters both academic and personal growth. The institution is known for its strong emphasis on quality education, ensuring that students receive hands-on learning opportunities that prepare them for real-world challenges. With industry-aligned programs and dedicated faculty members, students are encouraged to develop critical thinking skills, creativity, and professionalism, equipping them for success in their chosen careers.<br>
+                    <br>
+                 Beyond academics, COC PHINMA offers a vibrant campus environment filled with extracurricular activities, student organizations, and leadership programs. From cultural and artistic events to sports competitions and community outreach programs, students have numerous opportunities to engage with their peers and develop a well-rounded personality. These activities help cultivate teamwork, social responsibility, and leadership skills that are essential for their future endeavors.
+            
+                    
+                    </p>
+              </div>
+          </div>
+         <div class="section_gallery">
+            <img class="slides" src="images/8ec967eb-1eb9-4cd5-b517-96f585bf2f8b.jpg" alt="Gallery Image 1">
+            <img class="slides" src="images/d26a4cb9-7844-4ace-ad52-581fe2e169e5.jpg" alt="Gallery Image 2">
+            <img class="slides" src="images/f3761cb7-84b1-4e3e-94b6-10b9d16f1981.jpg" alt="Gallery Image 3">
+            <img class="slides" src="images/159c8254-4f6f-4b61-a280-a32d066ba683.jpg" alt="Gallery Image 4">
+            <img class="slides" src="images/ff41f605-dc9a-437c-8538-0063beafbad5.jpg" alt="Gallery Image 5">
+            <img class="slides" src="images/A.jpg" alt="Gallery Image 6">
+            <img class="slides" src="images/B.jpg" alt="Gallery Image 7">
+            <img class="slides" src="images/C.jpg" alt="Gallery Image 8">
+            <img class="slides" src="images/D.jpg" alt="Gallery Image 9">
+            <img class="slides" src="images/E.jpg" alt="Gallery Image 10">
+            <img class="slides" src="images/F.jpg" alt="Gallery Image 11">
+            <img class="slides" src="images/G.jpg" alt="Gallery Image 12">
+            <img class="slides" src="images/ga.jpg" alt="Gallery Image 13">
+            <img class="slides" src="images/J.jpg" alt="Gallery Image 14">
+            <img class="slides" src="images/K.jpg" alt="Gallery Image 15">
+            <img class="slides" src="images/ki.jpg" alt="Gallery Image 16">
+            <img class="slides" src="images/N.jpg" alt="Gallery Image 17">
+            <img class="slides" src="images/ni.jpg" alt="Gallery Image 18">
+            <img class="slides" src="images/palo.jpg" alt="Gallery Image 19">
+            <img class="slides" src="images/pato.jpg" alt="Gallery Image 20">
+            <img class="slides" src="images/si.jpg" alt="Gallery Image 21">
+            <img class="slides" src="images/x.jpg" alt="Gallery Image 22">
+            <img class="slides" src="images/Z.jpg" alt="Gallery Image 23">
+         </div>
+
+      </div>
+        
+      <!-- JAVASCRIPT PARA SA SLIDE ANIMATION -->
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let slides = document.getElementsByClassName("slides");
+                for (let i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                slides[slideIndex - 1].style.display = "block";
+                setTimeout(showSlides, 3000); // Change image every 3 seconds
+            }
+
+            function changeSlide(n) {
+                let slides = document.getElementsByClassName("slides");
+                slides[slideIndex - 1].style.display = "none";
+                slideIndex += n;
+                if (slideIndex > slides.length) { slideIndex = 1; }
+                if (slideIndex < 1) { slideIndex = slides.length; }
+                slides[slideIndex - 1].style.display = "block";
+            }
+        </script>
+    </div>
